@@ -3,6 +3,7 @@
 #include <cstdint>
 #include <tuple>
 #include <random>
+#include <vector>
 
 //stable bucket sort??
 //forgotten technology.
@@ -15,6 +16,10 @@ bool operator<(const Data& A, const Data& B) {
 }
 /**/
 typedef std::multimap<std::uint64_t, std::uint64_t> MM;
+
+typedef std::map < std::uint64_t, std::vector<std::uint64_t>> SM;
+
+//MM == SM? about to Structure.
 
 MM MakeMM(std::size_t N,unsigned int Seed) {
 
