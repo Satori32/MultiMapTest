@@ -4,6 +4,7 @@
 #include <tuple>
 #include <random>
 #include <vector>
+#include <any>
 
 //stable bucket sort??
 //forgotten technology.
@@ -20,6 +21,8 @@ typedef std::multimap<std::uint64_t, std::uint64_t> MM;
 typedef std::map < std::uint64_t, std::vector<std::uint64_t>> SM;
 
 //MM == SM? about to Structure.
+
+typedef std::map < std::uint64_t, std::vector<std::any>> BM;//black box map. is it as real object structure?
 
 MM MakeMM(std::size_t N,unsigned int Seed) {
 
